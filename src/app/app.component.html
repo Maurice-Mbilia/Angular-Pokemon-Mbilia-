@@ -1,0 +1,64 @@
+<nav>
+  <div class="nav-wrapper teal">
+    <a href="#" class="brand-logo center"> Pokédex MBILIA</a>
+  </div>
+</nav>
+
+
+<router-outlet> </router-outlet>
+
+<!--
+<div class='container'>
+  <div class="row">
+  <div *ngFor='let pokemon of pokemonList' class="col s6 m4">
+    <div class="card horizontal" (click)="selectPokemon(pokemon.name)" pkmnBorderCard >
+      <div class="card-image">
+        <img [src]="pokemon.picture">
+      </div>
+      <div class="card-stacked">
+        <div class="card-content">
+          <p>{{ pokemon.name }}</p>
+          <p><small>{{ pokemon.created | date: 'dd/MM/yyyy' | uppercase }}</small></p>
+          <span *ngFor="let type of pokemon.types"
+            class="{{ type | pokemonTypeColor }}"
+            >
+            {{ type }}
+            
+          </span>  
+          
+        </div>
+     </div>
+     </div>
+  </div>
+  </div>
+</div>
+
+
+
+
+
+------------------------------------------------------------------------------------------
+
+
+
+
+  pkmnBorderCard : ceci c'est le directive qu'on applique à notre page html
+
+  Pipe (date avec ou sans param)
+  <input 
+    #input
+    (keyup.enter)="selectPokemon(input.value)"
+    type = "number"  
+  />
+
+  <p *ngIf="pokemonSelected">
+    Vous avez sélectionné le pokmachin: {{pokemonSelected?.name}}
+  </p>
+
+  <p *ngIf="!pokemonSelected">
+    Aucun pok trouvé ! Mince... 
+  </p>
+
+  <p *ngFor="let pokemon of pokemonList">
+    {{pokemon.name}}
+  </p>  -->
